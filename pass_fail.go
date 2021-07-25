@@ -16,7 +16,7 @@ log.Fatal(err)
 }
 if input == 100 {
 fmt.Println("Great")
-} else if >= 60 {
+} else if input >= 60 {
 fmt.Println("Passed")
 } else {
 fmt.Println("Failed")
