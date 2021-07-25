@@ -8,15 +8,15 @@ import (
 )
 
 func main() {
+var i int
 fmt.Print("Input result: ")
-reader := bufio.NewReader(os.Stdin)
-input, err := reader.ReadString('\n')
+_, err := fmt.Scanf("%d", &i)
 if err != nil {
 log.Fatal(err)
 }
-if input == 100 {
+if i == 100 {
 fmt.Println("Great")
-} else if input >= 60 {
+} else if i >= 60 {
 fmt.Println("Passed")
 } else {
 fmt.Println("Failed")
