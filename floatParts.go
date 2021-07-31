@@ -12,8 +12,7 @@ func floatParts(number float64) (integerPart int, fractionalPart float64) {
 
 func main() {
 	var inputNumber float64
-	//	TODO InputNumber by User
-	inputNumber = 1.26
+	fmt.Scanln(&inputNumber)
 	cans, remainder := floatParts(inputNumber)
 	fmt.Println(cans, remainder)
 }
